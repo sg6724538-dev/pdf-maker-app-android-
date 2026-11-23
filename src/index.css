@@ -71,12 +71,24 @@ input[type="range"].editor-slider::-moz-range-thumb {
   cursor: pointer;
 }
 
-/* Android / Mobile touch & safe-area ergonomics */
+/* Android / Mobile viewport & touch-scroll ergonomics */
 html,
-body {
-  overscroll-behavior-y: contain;
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   touch-action: manipulation;
+}
+
+.app-scroll-container {
+  overflow-y: auto;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+  touch-action: pan-y;
 }
 
 .pt-safe {

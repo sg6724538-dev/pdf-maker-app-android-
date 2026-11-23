@@ -135,7 +135,7 @@ export function HomeView({
 
       {/* 4 Large Feature Cards */}
       <section aria-label="Quick tools">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 xl:grid-cols-4">
           {featureCards.map((card) => {
             const Icon = card.icon;
             return (
@@ -143,22 +143,22 @@ export function HomeView({
                 key={card.id}
                 type="button"
                 onClick={card.onClick}
-                className={`group flex flex-col items-start justify-between rounded-2xl border p-5 text-left transition-all duration-150 active:scale-[0.99] ${card.cardSurface}`}
+                className={`group flex flex-col items-start justify-between rounded-2xl border p-3.5 text-left transition-all duration-150 active:scale-[0.99] sm:p-5 ${card.cardSurface}`}
               >
                 <div className="flex w-full items-center justify-between">
                   <div
-                    className={`flex h-12 w-12 items-center justify-center rounded-xl ${card.accentBg}`}
+                    className={`flex h-10 w-10 items-center justify-center rounded-xl sm:h-12 sm:w-12 ${card.accentBg}`}
                   >
-                    <Icon className="h-6 w-6" />
+                    <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                   </div>
                   <ArrowRight className="h-4 w-4 text-slate-400 transition-transform duration-150 group-hover:translate-x-1 group-hover:text-slate-700 dark:group-hover:text-slate-200" />
                 </div>
 
-                <div className="mt-5">
-                  <h2 className="font-display text-base font-bold text-slate-950 dark:text-white">
+                <div className="mt-3.5 sm:mt-5">
+                  <h2 className="font-display text-sm font-bold text-slate-950 sm:text-base dark:text-white">
                     {card.title}
                   </h2>
-                  <p className="mt-1 text-sm leading-snug text-slate-600 dark:text-slate-400">
+                  <p className="mt-1 text-xs leading-snug text-slate-600 sm:text-sm dark:text-slate-400">
                     {card.description}
                   </p>
                 </div>

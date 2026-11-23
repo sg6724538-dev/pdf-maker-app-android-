@@ -48,7 +48,7 @@ export function RenamePdfModal({ doc, onClose, onConfirm }: RenameModalProps) {
       onClick={onClose}
     >
       <div
-        className="w-full max-w-md rounded-2xl border border-slate-200 bg-white p-6 shadow-xl dark:border-slate-800 dark:bg-[#141C2E]"
+        className="max-h-[88dvh] w-full max-w-md overflow-y-auto rounded-2xl border border-slate-200 bg-white p-6 shadow-xl dark:border-slate-800 dark:bg-[#141C2E]"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between gap-4">
@@ -149,7 +149,7 @@ export function PdfInfoModal({ doc, onClose }: PdfInfoModalProps) {
       onClick={onClose}
     >
       <div
-        className="w-full max-w-md rounded-2xl border border-slate-200 bg-white p-6 shadow-xl dark:border-slate-800 dark:bg-[#141C2E]"
+        className="max-h-[88dvh] w-full max-w-md overflow-y-auto rounded-2xl border border-slate-200 bg-white p-6 shadow-xl dark:border-slate-800 dark:bg-[#141C2E]"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between gap-4">
@@ -232,7 +232,7 @@ export function DeletePdfModal({ doc, onClose, onConfirm }: DeleteConfirmModalPr
       onClick={onClose}
     >
       <div
-        className="w-full max-w-md rounded-2xl border border-slate-200 bg-white p-6 shadow-xl dark:border-slate-800 dark:bg-[#141C2E]"
+        className="max-h-[88dvh] w-full max-w-md overflow-y-auto rounded-2xl border border-slate-200 bg-white p-6 shadow-xl dark:border-slate-800 dark:bg-[#141C2E]"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-start gap-4">
@@ -299,7 +299,7 @@ export function NewPdfActionSheet({
       onClick={onClose}
     >
       <div
-        className="w-full max-w-md rounded-t-3xl border border-slate-200 bg-white p-6 shadow-2xl sm:rounded-2xl dark:border-slate-800 dark:bg-[#141C2E]"
+        className="max-h-[88dvh] w-full max-w-md overflow-y-auto rounded-t-3xl border border-slate-200 bg-white p-6 pb-safe shadow-2xl sm:rounded-2xl dark:border-slate-800 dark:bg-[#141C2E]"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="mx-auto mb-4 h-1.5 w-10 rounded-full bg-slate-200 sm:hidden dark:bg-slate-700" />

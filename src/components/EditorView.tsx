@@ -364,7 +364,7 @@ export function EditorView({
                       height: `${activeImage.edit.crop.height * 100}%`,
                     }}
                     onPointerDown={(e) => handleCropPointerDown(e, 'move')}
-                    className="absolute cursor-move border-2 border-[#536DFE] bg-[#536DFE]/10 shadow-[0_0_0_9999px_rgba(15,23,42,0.5)]"
+                    className="absolute cursor-move touch-none border-2 border-[#536DFE] bg-[#536DFE]/10 shadow-[0_0_0_9999px_rgba(15,23,42,0.5)]"
                   >
                     {/* Rule of thirds lines */}
                     <div className="pointer-events-none absolute inset-0 grid grid-cols-3 grid-rows-3">
